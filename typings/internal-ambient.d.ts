@@ -17,6 +17,11 @@ declare namespace NodeJS {
     requestGarbageCollectionForTesting(): void;
   }
 
+  interface NotificationBinding {
+    isSupported(): boolean;
+    Notification: typeof Electron.Notification;
+  }
+
   interface PowerMonitor {
     createPowerMonitor(): Electron.PowerMonitor;
     PowerMonitor: Function;
@@ -42,6 +47,7 @@ declare namespace NodeJS {
     electronBinding(name: 'app'): { app: Electron.App, App: Function };
     electronBinding(name: 'command_line'): Electron.CommandLine;
     electronBinding(name: 'content_tracing'): Electron.ContentTracing;
+    electronBinding(name: 'notification'): NotificationBinding;
     electronBinding(name: 'power_monitor'): PowerMonitor;
     electronBinding(name: 'power_save_blocker'): PowerSaveBlockerBinding;
     electronBinding(name: 'screen'): ScreenBinding;

@@ -1,8 +1,7 @@
-'use strict'
-
-const { EventEmitter } = require('events')
+import { EventEmitter } from 'events'
 const { Notification, isSupported } = process.electronBinding('notification')
 
+// Notification is an EventEmitter.
 Object.setPrototypeOf(Notification.prototype, EventEmitter.prototype)
 
 Notification.isSupported = isSupported

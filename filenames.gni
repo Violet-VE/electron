@@ -21,7 +21,7 @@ filenames = {
     "lib/browser/api/module-list.js",
     "lib/browser/api/net.js",
     "lib/browser/api/net-log.js",
-    "lib/browser/api/notification.js",
+    "lib/browser/api/notification.ts",
     "lib/browser/api/power-monitor.ts",
     "lib/browser/api/power-save-blocker.ts",
     "lib/browser/api/protocol.ts",
