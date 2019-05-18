@@ -64,7 +64,7 @@ filenames = {
     "lib/common/parse-features-string.ts",
     "lib/common/path-utils.ts",
     "lib/common/reset-search-paths.ts",
-    "lib/common/web-view-methods.js",
+    "lib/common/web-view-methods.ts",
     "lib/renderer/callbacks-registry.js",
     "lib/renderer/chrome-api.ts",
     "lib/renderer/content-scripts-injector.ts",

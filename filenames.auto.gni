@@ -122,7 +122,7 @@ auto_filenames = {
     "lib/common/crash-reporter.js",
     "lib/common/electron-binding-setup.ts",
     "lib/common/error-utils.ts",
-    "lib/common/web-view-methods.js",
+    "lib/common/web-view-methods.ts",
     "lib/renderer/api/crash-reporter.js",
     "lib/renderer/api/desktop-capturer.js",
     "lib/renderer/api/ipc-renderer.js",
