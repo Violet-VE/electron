@@ -26,7 +26,7 @@ filenames = {
     "lib/browser/api/power-save-blocker.ts",
     "lib/browser/api/protocol.ts",
     "lib/browser/api/screen.ts",
-    "lib/browser/api/session.js",
+    "lib/browser/api/session.ts",
     "lib/browser/api/system-preferences.js",
     "lib/browser/api/top-level-window.js",
     "lib/browser/api/touch-bar.js",

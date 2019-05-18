@@ -36,6 +36,12 @@ declare namespace NodeJS {
     Screen: Function;
   }
 
+  interface SessionBinding {
+    fromPartition: typeof Electron.Session.fromPartition;
+    Cookies: Function;
+    Session: Function;
+  }
+
   interface Process {
     /**
      * DO NOT USE DIRECTLY, USE process.electronBinding
@@ -51,6 +57,7 @@ declare namespace NodeJS {
     electronBinding(name: 'power_monitor'): PowerMonitor;
     electronBinding(name: 'power_save_blocker'): PowerSaveBlockerBinding;
     electronBinding(name: 'screen'): ScreenBinding;
+    electronBinding(name: 'session'): SessionBinding;
     electronBinding(name: 'tray'): { Tray: Function };
 
     log: NodeJS.WriteStream['write'];
