@@ -7,7 +7,7 @@ filenames = {
     "lib/browser/api/auto-updater/squirrel-update-win.js",
     "lib/browser/api/browser-view.js",
     "lib/browser/api/browser-window.js",
-    "lib/browser/api/content-tracing.js",
+    "lib/browser/api/content-tracing.ts",
     "lib/browser/api/crash-reporter.js",
     "lib/browser/api/dialog.js",
     "lib/browser/api/exports/electron.js",
