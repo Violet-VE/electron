@@ -26,6 +26,11 @@ declare namespace NodeJS {
     powerSaveBlocker(): Electron.PowerSaveBlocker;
   }
 
+  interface ScreenBinding {
+    createScreen(): Electron.Screen;
+    Screen: Function;
+  }
+
   interface Process {
     /**
      * DO NOT USE DIRECTLY, USE process.electronBinding
@@ -38,6 +43,7 @@ declare namespace NodeJS {
     electronBinding(name: 'command_line'): Electron.CommandLine;
     electronBinding(name: 'power_monitor'): PowerMonitor;
     electronBinding(name: 'power_save_blocker'): PowerSaveBlockerBinding;
+    electronBinding(name: 'screen'): ScreenBinding;
     electronBinding(name: 'tray'): { Tray: Function };
 
     log: NodeJS.WriteStream['write'];
