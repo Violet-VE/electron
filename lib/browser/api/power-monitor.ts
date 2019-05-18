@@ -1,8 +1,6 @@
-'use strict'
-
+import { EventEmitter } from 'events'
 import { createLazyInstance } from '../utils'
 
-const { EventEmitter } = require('events')
 const { createPowerMonitor, PowerMonitor } = process.electronBinding('power_monitor')
 
 // PowerMonitor is an EventEmitter.

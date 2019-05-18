@@ -17,6 +17,11 @@ declare namespace NodeJS {
     requestGarbageCollectionForTesting(): void;
   }
 
+  interface PowerMonitor {
+    createPowerMonitor(): Electron.PowerMonitor;
+    PowerMonitor: Function;
+  }
+
   interface PowerSaveBlockerBinding {
     powerSaveBlocker(): Electron.PowerSaveBlocker;
   }
@@ -31,6 +36,7 @@ declare namespace NodeJS {
     electronBinding(name: 'v8_util'): V8UtilBinding;
     electronBinding(name: 'app'): { app: Electron.App, App: Function };
     electronBinding(name: 'command_line'): Electron.CommandLine;
+    electronBinding(name: 'power_monitor'): PowerMonitor;
     electronBinding(name: 'power_save_blocker'): PowerSaveBlockerBinding;
     electronBinding(name: 'tray'): { Tray: Function };
 
