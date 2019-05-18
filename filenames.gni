@@ -61,7 +61,7 @@ filenames = {
     "lib/common/electron-binding-setup.ts",
     "lib/common/error-utils.ts",
     "lib/common/init.ts",
-    "lib/common/parse-features-string.js",
+    "lib/common/parse-features-string.ts",
     "lib/common/path-utils.ts",
     "lib/common/reset-search-paths.ts",
     "lib/common/web-view-methods.js",
