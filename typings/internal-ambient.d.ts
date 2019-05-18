@@ -42,6 +42,11 @@ declare namespace NodeJS {
     Session: Function;
   }
 
+  interface SystemPreferencesBinding {
+    systemPreferences: Electron.SystemPreferences;
+    SystemPreferences: Function;
+  }
+
   interface Process {
     /**
      * DO NOT USE DIRECTLY, USE process.electronBinding
@@ -58,6 +63,7 @@ declare namespace NodeJS {
     electronBinding(name: 'power_save_blocker'): PowerSaveBlockerBinding;
     electronBinding(name: 'screen'): ScreenBinding;
     electronBinding(name: 'session'): SessionBinding;
+    electronBinding(name: 'system_preferences'): SystemPreferencesBinding;
     electronBinding(name: 'tray'): { Tray: Function };
 
     log: NodeJS.WriteStream['write'];
