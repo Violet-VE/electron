@@ -121,7 +121,7 @@ auto_filenames = {
     "lib/common/buffer-utils.js",
     "lib/common/crash-reporter.js",
     "lib/common/electron-binding-setup.ts",
-    "lib/common/error-utils.js",
+    "lib/common/error-utils.ts",
     "lib/common/web-view-methods.js",
     "lib/renderer/api/crash-reporter.js",
     "lib/renderer/api/desktop-capturer.js",
@@ -166,7 +166,7 @@ auto_filenames = {
 
   context_script_browserify_deps = [
     "lib/common/electron-binding-setup.ts",
-    "lib/common/error-utils.js",
+    "lib/common/error-utils.ts",
     "lib/content_script/init.js",
     "lib/renderer/chrome-api.ts",
     "lib/renderer/extensions/event.js",
